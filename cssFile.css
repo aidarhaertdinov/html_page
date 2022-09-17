@@ -4,13 +4,8 @@ body {
     font-family: 'Raleway';
 }
 .page {
-    width: 100%;
-    height: 100%;
     background-size: cover;
     background-position: center center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 .picture {
     background-image: url("ColorFill.png");
@@ -19,9 +14,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin-left: 60px;
-    margin-right: 60px;
-
+    margin-left: 8%;
+    margin-right: 8%;
 }
 .frame>.block_menu {
     padding-top: 50px;
@@ -32,18 +26,27 @@ body {
     display: flex;
 	flex-direction: row;
 }
+body a:hover {
+	color: gray;
+}
+body a:active {
+	color: blue;
+	text-decoration: underline;
+}
 #shape {
     background-image: url("Shape.png");
     width: 40px;
     height: 30px;
-
     margin-right: 10px;
+    text-decoration: none;
 }
 .text {
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: 16px;
     text-transform: uppercase;
     line-height: 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
 .block_two {
     width: 441px;
@@ -58,45 +61,59 @@ body {
     text-decoration: none;
     color: #FFFFFF;
     margin: auto;
-    font-size: 15px;
+    font-size: 18px;
 }
 .block_menu {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-#a_black {
-    color: black;
-}
 .button_sign {
     width: 80px;
-    height: 25px;
+    height: 30px;
     display: flex;
     align-items: center;
-    color: #FFFFFF;
-    font-size: 12px;
     line-height: 25px;
     border: 1px solid #FFFFFF;
     background: rgba(0, 0, 0, 0.0001);
     border-radius: 6px;
-    box-sizing: border-box;
     justify-content: center;
 }
-.content_block {
-    margin-top: 155px;
-    display: flex;
-    flex-direction: row;
+.a_sign {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-size: 16px;
 }
-.content_one {
-    width: 640px;
-    height: 320px;
+.a_buy {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Raleway';
+}
+.a_try {
+    color: black;
+    text-decoration: none;
+    font-family: 'Raleway';
+}
+.a_started {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Raleway';
+}
+.main_block {
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.first_block {
+    width: 1000px;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.content_two {
+.second_block {
     display: flex;
     justify-content: right;
     align-items: center;
@@ -107,8 +124,8 @@ h1 {
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.content_textOne {
-    font-size: 18px;
+.main_description {
+    font-size: 22px;
     line-height: 35px;
     color: #FFFFFF;
     margin: 0px;
@@ -140,7 +157,7 @@ h1 {
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
     border: white;
 }
-.rounded_rectangle {
+.video_box {
     background-image: url("Rounded_Rectangle.png");
     width: 600px;
     height: 320px;
@@ -152,50 +169,52 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-.block_play {
-    width: 110px;
-    height: 96px;
+.block_play_description {
+    width: 150px;
+    height: 110px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.black_square {
+.block_play_button {
     width: 60px;
     height: 60px;
     background: black;
     border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
-.watch_video {
-    font-size: 12px;
+.block_play_text {
+    font-size: 15px;
     line-height: 14px;
     display: flex;
     align-items: flex-end;
     text-align: center;
     text-transform: uppercase;
     color: black;
+    font-weight: bold;
 }
 #triangle {
     border: 12px solid transparent;
     border-left: 18px solid rgb(255, 255, 255);
-    width: 0;
-    height: 0;
-    margin-left: 22px;
-    margin-top: 15px;
+    margin-left: auto;
 }
 
 .frame_two {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 5%;
+    margin-bottom: auto;
 }
 #heading {
-    margin-top: 30px;
     font-size: 45px;
     color: #061E37;
     font-weight: 600;
 }
 .project_management {
-    margin-top: 10px;
+    margin-top: 2%;
     width: 555px;
     height: 104px;
 }
@@ -206,13 +225,12 @@ h2 {
     margin-top: 0px;
 }
 .project_text {
-    font-size: 15px;
+    margin-top: 2%;
+    font-size: 17px;
     color: #B0BEC5;
-    margin-top: 20px;
     text-align: center;
 }
 .three_squares {
-    margin-top: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -222,6 +240,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: end;
+    padding: 10px;
 }
 .pictures {
     background-repeat: no-repeat;
@@ -251,21 +270,23 @@ h3 {
     margin-bottom: 0px;
 }
 .text_squares {
-    font-size: 15px;
+    margin-top: 2%;
+    font-size: 17px;
     color: #78909C;
     margin-top: 10px;
     margin-bottom: 0px;
 }
 .get_started {
-    margin-top: 30px;
+    margin-top: 2%;
+    margin-bottom: 1%;
     width: 150px;
     height: 55px;
     background: #1DE9B6;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
-    color: #FFFFFF;
     text-transform: uppercase;
     border-radius: 6px;
     border: none;
+    font-weight: bolder;
 }
 .rectangles {
     width: 100%;
@@ -291,6 +312,9 @@ h3 {
     justify-content: space-between;
     display: flex;
     flex-direction: row;
+    margin-bottom: 5px;
+    margin-left: -8%;
+    margin-right: -8%;
 }
 .circle {
     width: 60px;
@@ -303,7 +327,4 @@ h3 {
     color: #FFFFFF;
     margin-left: 20px;
     font-weight: 800;
-}
-.jsb {
-    justify-content: space-between;
 }
