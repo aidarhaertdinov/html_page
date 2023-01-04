@@ -106,14 +106,16 @@ body a:active {
     justify-content: space-between;
 }
 .first_block {
-    width: 1000px;
+    width: 50%;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-right: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .second_block {
+    width: 50%;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -129,6 +131,7 @@ h1 {
     line-height: 35px;
     color: #FFFFFF;
     margin: 0px;
+    padding-bottom: 10px;
 }
 .buttons {
     width: 328px;
